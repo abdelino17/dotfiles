@@ -1,0 +1,75 @@
+[user]
+  email = fare.abdel@gmail.com
+  name  = abdelino17
+
+[core]
+  filemode = false
+  editor = nano
+  excludesfile = ~/.gitignore
+	pager = delta --line-numbers --dark
+
+[branch]
+  autosetuprebase = always
+
+[push]
+  default = current
+
+[pull]
+	rebase = true
+
+[color]
+  ui = always
+  diff = true
+  status = auto
+  branch = always
+  interactive = always
+  pager = true
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  untracked = cyan
+
+[url "https://"]
+
+[init]
+  defaultBranch = main
+
+[web]
+  browser = google-chrome
+
+[credential]
+  helper = osxkeychain
+
+[merge]
+  tool = kdiff3
+
+[difftool]
+  prompt = false
+
+[delta]
+	side-by-side = true
+	line-numbers = true
+
+[alias]
+  ad  = add --all
+  clo = clone
+  co = checkout
+  st = status
+  pl = pull --rebase
+  ps = push
+  pst = push --follow-tags 
+  psd = push --delete origin
+  ci = commit
+  cie= commit --allow-empty
+  t = tag
+  rc = rebase --continue
+  br = branch
+  brd= branch -D
+  lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset%s %Cgreen(%an %ar [%cn %cr])%Creset' --abbrev-commit --date=relative -10
+  lga = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset%s %Cgreen(%an %ar [%cn %cr])%Creset' --abbrev-commit --date=relative --all
+
